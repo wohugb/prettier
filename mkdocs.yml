@@ -1,0 +1,71 @@
+site_name: prettier
+site_description: prettier
+site_author: Nosy
+copyright: '版权 &copy; 2003 - 2019 wohugb.github.io'
+
+repo_name: prettier
+repo_url: http://wohugb.github.io/prettier/
+edit_uri: ''
+
+theme:
+  name: material
+
+  include_search_page: false
+  search_index_only: true
+
+  language: zh
+  feature:
+    tabs: true
+  palette:
+    primary: indigo
+    accent: indigo
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/images/favicon.png
+  logo:
+    icon: "\uE80C"
+  extra_css: [assets/stylesheets/extra.css]
+extra:
+  search:
+    language: 'jp'
+
+markdown_extensions:
+  - admonition
+  - codehilite:
+      linenums: false
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.details
+
+nav:
+  - 关于:
+    - 什么是Prettier?: index.md
+    - 为什么Prettier?: why-prettier.md
+    - Prettier 与 Linters: comparison.md
+    - Option Philosophy: option-philosophy.md
+    - Rationale: rationale.md
+  - 用法:
+    - 安装: install.md
+    - CLI: cli.md
+    - API: api.md
+    - 浏览器: browser.md
+    - 插件 (Beta): plugins.md
+    - 预提交钩子: precommit.md
+    - 观测变化: watching-files.md
+    - 与ESLint集成: eslint.md
+    - 忽略代码: ignore.md
+  - 配置Prettier:
+    - 选项: options.md
+    - 配置文件: configuration.md
+  - 编辑器:
+    - 编辑器集成: editors.md
+    - WebStorm设置: webstorm.md
+    - Vim设置: vim.md
+  - 杂项:
+    - 技术细节: technical-details.md
+    - 相关项目: related-projects.md
+
